@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC53FECA-EC32-45E9-B2E5-0F935F3183B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Phm.Billing.UI</RootNamespace>
+    <AssemblyName>Phm.Billing.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddVatInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddVatInvoice.Designer.cs">
+      <DependentUpon>AddVatInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddInvoice.Designer.cs">
+      <DependentUpon>AddInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCustomer.Designer.cs">
+      <DependentUpon>EditCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditVatInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditVatInvoice.Designer.cs">
+      <DependentUpon>EditVatInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditInvoice.Designer.cs">
+      <DependentUpon>EditInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCst.Designer.cs">
+      <DependentUpon>UpdateCst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VatOutstandingPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VatOutstandingPayment.Designer.cs">
+      <DependentUpon>VatOutstandingPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VatInvoiceReport.cs">
+      <DependentUpon>VatInvoiceReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PrintVatInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintVatInvoice.Designer.cs">
+      <DependentUpon>PrintVatInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VatInvoicePreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VatInvoicePreview.Designer.cs">
+      <DependentUpon>VatInvoicePreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateVat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateVat.Designer.cs">
+      <DependentUpon>UpdateVat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VatInvoiceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VatInvoiceList.Designer.cs">
+      <DependentUpon>VatInvoiceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceList.Designer.cs">
+      <DependentUpon>InvoiceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutstandingPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutstandingPayment.Designer.cs">
+      <DependentUpon>OutstandingPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintInvoice.Designer.cs">
+      <DependentUpon>PrintInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoicePreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoicePreview.Designer.cs">
+      <DependentUpon>InvoicePreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvoiceReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="UpdateServiceTax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateServiceTax.Designer.cs">
+      <DependentUpon>UpdateServiceTax.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddVatInvoice.resx">
+      <DependentUpon>AddVatInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddInvoice.resx">
+      <DependentUpon>AddInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCustomer.resx">
+      <DependentUpon>EditCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditVatInvoice.resx">
+      <DependentUpon>EditVatInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditInvoice.resx">
+      <DependentUpon>EditInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCst.resx">
+      <DependentUpon>UpdateCst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VatOutstandingPayment.resx">
+      <DependentUpon>VatOutstandingPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VatInvoiceReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VatInvoiceReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintVatInvoice.resx">
+      <DependentUpon>PrintVatInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VatInvoicePreview.resx">
+      <DependentUpon>VatInvoicePreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateVat.resx">
+      <DependentUpon>UpdateVat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VatInvoiceList.resx">
+      <DependentUpon>VatInvoiceList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceList.resx">
+      <DependentUpon>InvoiceList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutstandingPayment.resx">
+      <DependentUpon>OutstandingPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintInvoice.resx">
+      <DependentUpon>PrintInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoicePreview.resx">
+      <DependentUpon>InvoicePreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InvoiceReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Content Include="NLog.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="UpdateServiceTax.resx">
+      <DependentUpon>UpdateServiceTax.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Phm.Billing.Bl\Phm.Billing.Bl.csproj">
+      <Project>{795c1bbf-0bea-402b-8fc5-8c51b751e23a}</Project>
+      <Name>Phm.Billing.Bl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Phm.Billing.Cdo\Phm.Billing.Cdo.csproj">
+      <Project>{29da3f24-b0ea-46d6-aa76-eef2593b002c}</Project>
+      <Name>Phm.Billing.Cdo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Phm.Billing.Utility\Phm.Billing.Utility.csproj">
+      <Project>{c078a0a7-b80f-4af8-b2f6-a2c6a2fc2ecc}</Project>
+      <Name>Phm.Billing.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
