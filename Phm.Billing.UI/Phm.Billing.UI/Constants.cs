@@ -11,6 +11,5 @@ namespace Phm.Billing.UI
         public static decimal ServiceTax { get; set; }
         public static decimal Vat { get; set; }
         public static decimal  Cst { get; set; }
-		fgdfg
     }
 }
