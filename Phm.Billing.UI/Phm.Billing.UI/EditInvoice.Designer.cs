@@ -63,6 +63,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.cmbCustomer = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtKrishiCess = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtSwachBharatCess = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -70,7 +74,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(635, 508);
+            this.btnSave.Location = new System.Drawing.Point(635, 557);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(98, 23);
             this.btnSave.TabIndex = 35;
@@ -92,7 +96,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(500, 363);
+            this.label2.Location = new System.Drawing.Point(502, 415);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 13);
             this.label2.TabIndex = 46;
@@ -101,7 +105,7 @@
             // txtTotalAmount
             // 
             this.txtTotalAmount.Enabled = false;
-            this.txtTotalAmount.Location = new System.Drawing.Point(578, 360);
+            this.txtTotalAmount.Location = new System.Drawing.Point(580, 412);
             this.txtTotalAmount.Name = "txtTotalAmount";
             this.txtTotalAmount.Size = new System.Drawing.Size(126, 20);
             this.txtTotalAmount.TabIndex = 47;
@@ -118,6 +122,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.txtKrishiCess);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.txtSwachBharatCess);
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtTotalAmount);
@@ -140,7 +148,7 @@
             this.groupBox1.Controls.Add(this.dataGridView);
             this.groupBox1.Location = new System.Drawing.Point(28, 109);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(720, 393);
+            this.groupBox1.Size = new System.Drawing.Size(720, 442);
             this.groupBox1.TabIndex = 37;
             this.groupBox1.TabStop = false;
             // 
@@ -406,11 +414,47 @@
             this.cmbCustomer.TabIndex = 1;
             this.cmbCustomer.ValueMember = "Id";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(445, 389);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(131, 13);
+            this.label9.TabIndex = 69;
+            this.label9.Text = "Krishi Kalyan Cess 0.50% :";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // txtKrishiCess
+            // 
+            this.txtKrishiCess.Enabled = false;
+            this.txtKrishiCess.Location = new System.Drawing.Point(580, 386);
+            this.txtKrishiCess.Name = "txtKrishiCess";
+            this.txtKrishiCess.Size = new System.Drawing.Size(126, 20);
+            this.txtKrishiCess.TabIndex = 70;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(438, 363);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(138, 13);
+            this.label8.TabIndex = 67;
+            this.label8.Text = "Swach Bharat Cess 0.50% :";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // txtSwachBharatCess
+            // 
+            this.txtSwachBharatCess.Enabled = false;
+            this.txtSwachBharatCess.Location = new System.Drawing.Point(579, 360);
+            this.txtSwachBharatCess.Name = "txtSwachBharatCess";
+            this.txtSwachBharatCess.Size = new System.Drawing.Size(126, 20);
+            this.txtSwachBharatCess.TabIndex = 68;
+            // 
             // EditInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(775, 542);
+            this.ClientSize = new System.Drawing.Size(775, 586);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
@@ -464,5 +508,9 @@
         private System.Windows.Forms.ComboBox cmbCustomer;
         private System.Windows.Forms.TextBox txtInvoiceNo;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtKrishiCess;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtSwachBharatCess;
     }
 }

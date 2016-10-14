@@ -20,6 +20,8 @@ namespace Phm.Billing.UI
         BlInvoice blInvoice = new BlInvoice();
         decimal total = 0;
         decimal tax = 0;
+        decimal krishiCess = 0;
+        decimal swachBharatCess = 0;
         decimal taxableAmount = 0;
         decimal serviceTax = 0;
         List<string> itemsToDelete = new List<string>();
@@ -222,8 +224,12 @@ namespace Phm.Billing.UI
             taxableAmount = checkBox1.Checked ? total * 70 / 100 : total;
             txtTaxableAmount.Text = taxableAmount.ToString();
             tax = (taxableAmount * serviceTax) / 100;
+            krishiCess = (taxableAmount * (decimal)0.5) / 100;
+            swachBharatCess = (taxableAmount * (decimal)0.5) / 100;
             txtServiceTax.Text = tax.ToString("#0.00");
-            txtTotalAmount.Text = Math.Round(total + tax + GetFreight(), 0).ToString("#0.00");
+            txtSwachBharatCess.Text = swachBharatCess.ToString("#0.00");
+            txtKrishiCess.Text = krishiCess.ToString("#0.00");
+            txtTotalAmount.Text = Math.Round(total + tax + swachBharatCess + krishiCess + GetFreight(), 0).ToString("#0.00");
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -250,9 +256,11 @@ namespace Phm.Billing.UI
                     ServiceTaxPerc = Constants.ServiceTax,
                     ServiceTaxAmount = tax,
                     Freight = GetFreight(),
-                    NetAmount = Math.Round(total + tax + GetFreight(), 0),
+                    NetAmount = Math.Round(total + tax + swachBharatCess + krishiCess + GetFreight(), 0),
                     ReduceTax = checkBox1.Checked,
                     ReducedServiceTaxPerc = serviceTax,
+                    KrishiKalyanCess = krishiCess,
+                    SwachBharatCess = swachBharatCess,
                     Total = total,
                 };
 

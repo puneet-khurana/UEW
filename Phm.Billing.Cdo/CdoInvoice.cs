@@ -25,6 +25,10 @@ namespace Phm.Billing.Cdo
         public bool ReduceTax { get; set; }
         public decimal ReducedServiceTaxPerc { get; set; }
         public decimal NetAmount { get; set; }
+        public decimal KrishiKalyanCessPerc { get { return (decimal)0.50; } }
+        public decimal KrishiKalyanCess { get; set; }
+        public decimal SwachBharatCessPerc { get { return (decimal)0.50; } }
+        public decimal SwachBharatCess { get; set; }
         public decimal VatPerc { get; set; }
         public decimal VatAmount { get; set; }
         public string Amendment { get; set; }

@@ -30,6 +30,10 @@ namespace Phm.Billing.Bl
                 new SqlParameter("@Total", cdoInvoice.Total),
                 new SqlParameter("@ReduceTax", cdoInvoice.ReduceTax),
                 new SqlParameter("@ReducedServiceTaxPerc", cdoInvoice.ReducedServiceTaxPerc),
+                new SqlParameter("@KrishiKalyanCessPerc", cdoInvoice.KrishiKalyanCessPerc),
+                new SqlParameter("@KrishiKalyanCess", cdoInvoice.KrishiKalyanCess),
+                new SqlParameter("@SwachBharatCessPerc", cdoInvoice.SwachBharatCessPerc),
+                new SqlParameter("@SwachBharatCess", cdoInvoice.SwachBharatCess),
                 new SqlParameter("@NetAmount", cdoInvoice.NetAmount)
             };
 
@@ -121,6 +125,10 @@ namespace Phm.Billing.Bl
                 new SqlParameter("@Total", cdoInvoice.Total),
                 new SqlParameter("@ReduceTax", cdoInvoice.ReduceTax),
                 new SqlParameter("@ReducedServiceTaxPerc", cdoInvoice.ReducedServiceTaxPerc),
+                new SqlParameter("@KrishiKalyanCessPerc", cdoInvoice.KrishiKalyanCessPerc),
+                new SqlParameter("@KrishiKalyanCess", cdoInvoice.KrishiKalyanCess),
+                new SqlParameter("@SwachBharatCessPerc", cdoInvoice.SwachBharatCessPerc),
+                new SqlParameter("@SwachBharatCess", cdoInvoice.SwachBharatCess),
                 new SqlParameter("@NetAmount", cdoInvoice.NetAmount)
             };
 
